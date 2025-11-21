@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我是谁</title>
+    </head>
+    <body>
+        <h1>猜猜我是谁</h1>
+        <p id="rabbit">Hi，你好，我是一只兔子</p>
+        <button onclick="changeText()">敲敲</button>
+        <script>
+            let messages=[
+                "哎呀再敲一下试试",
+                "杀人犯！",
+                "荒荒荒",
+                "我在思考人生…",
+                "我吃巧克力",
+                "我跟着你"
+            ]
+            function changeText() {
+                let randomIndex = Math.floor(Math.random() * messages.length);
+                document.getElementById("rabbit").innerText = messages[randomIndex];
+            }
+        </script>
+    </body>
+</html>
