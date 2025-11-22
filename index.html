@@ -38,9 +38,17 @@
         </style>
     </head>
     <body>
+        <div class="qa">
         <h1>猜猜我是谁</h1>
         <p id="rabbit">Hi，你好，我是一只兔子</p>
-        <button onclick="changeText()">敲敲</button>
+        </div>
+
+        <div class="pic">
+            <img src="F:\Websitepractice\First\back.jpg" alt="兔子" width="200">
+        </div>
+
+        <div class="butt">
+        <button onclick="changeText()">多敲几下</button>
         <script>
             let messages=[
                 "哎呀再敲一下试试",
@@ -55,5 +63,13 @@
                 document.getElementById("rabbit").innerText = messages[randomIndex];
             }
         </script>
+        </div>
+
+        <h2>haihaihai</h2>
+        <p>我是文字段落<br>那你是什么呢<hr><hr></p>
+
+        <div class="in">
+            <a href="http://baidu.com">百度一下</a>
+        </div>
     </body>
 </html>
