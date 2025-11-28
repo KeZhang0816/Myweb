@@ -5,6 +5,25 @@
         <title></title>
     </head>
     <body>
-        <h1>我是谁</h1>
+        <h1 id="glad">Who</h1>
+        <div>
+            <input id="inI" type="text" placeholder="name">
+            <button id="submT">提交</button>
+        </div>
+        <script>
+            const inI = document.getElementById("inI")
+            const submT = document.getElementById("submT")
+            const glad = document.getElementById("glad")
+
+            submT.addEventListener("click",function(){
+                const name = inI.value
+                if (name === "鼠鼠"){
+                    glad.textContent = "嗨！鼠鼠！等你好久了"
+                }
+                else {
+                    glad.textContent = "嗨！" + inI.value
+                }
+            })
+        </script>
     </body>
 </html>
